@@ -1,4 +1,7 @@
 *** WooCommerce Balanced Payments Changelog ***
 
+2014.10.02 - version 1.0.1
+ * WooCommerce 2.1 Admin URL Compatability
+
 2014.04.02 - version 1.0.0
  * Initial Release

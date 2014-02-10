@@ -3,9 +3,10 @@ Contributors: patrickgarman, remear
 Tags: woocommerce, gateway, ecommerce, balanced payments
 Requires at least: 3.5
 Tested up to: 3.8
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Donate link: https://www.gittip.com/pmgarman/
 
 A gateway for the WooCommerce eCommerce plugin to allow using Balanced Payments to take payments.
 
@@ -58,5 +59,8 @@ Support will be provided in the WordPress.org support forum.
 
 == Changelog ==
 
-= 1.0 - 02/04/2014 =
+= 1.0.1 - 02/10/2014 =
+* WooCommerce 2.1 Admin URL Compatability
+
+= 1.0.0 - 02/04/2014 =
 * Initial Release

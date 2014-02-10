@@ -78,13 +78,13 @@ class WC_Balanced_Payments_CC extends WC_Payment_Gateway {
 
 		// Check Marketplace API Details
 		if( !$this->marketplace_uri ) {
-			$failures['errors'][] = sprintf( __( 'Please enter your marketplace URI <a href="%s">here</a>.', 'wc-balanced-payments' ), admin_url( 'admin.php?page=woocommerce_settings&tab=payment_gateways&section=WC_Balanced_Payments_CC' ) );
+			$failures['errors'][] = sprintf( __( 'Please enter your marketplace URI <a href="%s">here</a>.', 'wc-balanced-payments' ), admin_url( 'admin.php?page=' . $this->base->wc_admin_slug . '&section=WC_Balanced_Payments_CC' ) );
 		} elseif( !$this->base->validate_marketplace_uri( $this->marketplace_uri ) ) {
 			$failures['errors'][] = __( 'Your marketplace URI Should be prefixed by a something similar to <code>/v1/marketplaces/</code>.', 'wc-balanced-payments' );
 		}
 
 		if( !$this->api_secret ) {
-			$failures['errors'][] = sprintf( __( 'Please enter your secret key <a href="%s">here</a>.', 'wc-balanced-payments' ), admin_url( 'admin.php?page=woocommerce_settings&tab=payment_gateways&section=WC_Balanced_Payments_CC' ) );
+			$failures['errors'][] = sprintf( __( 'Please enter your secret key <a href="%s">here</a>.', 'wc-balanced-payments' ), admin_url( 'admin.php?page=' . $this->base->wc_admin_slug . '&section=WC_Balanced_Payments_CC' ) );
 		}
 
 		$this->base->display_failures( $failures );

@@ -40,6 +40,8 @@ class WC_Balanced_Payments_Base {
 
 		$this->marketplace_uri	= $this->testing !== 'yes' ? $this->settings['marketplace_uri'] : $this->settings['test_marketplace_uri'];
 		$this->api_secret		= $this->testing !== 'yes' ? $this->settings['api_secret'] : $this->settings['test_api_secret'];
+
+		$this->wc_admin_slug	= version_compare( $woocommerce->version, '2.1.0', '>=') ? 'wc-settings&tab=checkout' : 'woocommerce_settings&tab=payment_gateways';
 	}
 
 	/**

@@ -3,7 +3,7 @@
  * Plugin Name: WooCommerce - Balanced Payments Gateway
  * Plugin URI: http://www.woothemes.com/woocommerce/
  * Description: Integrate Balanced Payments into your WooCommerce checkout form.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Patrick Garman
  * Author URI: https://pmgarman.me
  * Text Domain: wc-balanced-payments
